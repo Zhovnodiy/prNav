@@ -1,0 +1,233 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практична робота структура сайту</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            color: #2980b9;
+            margin-top: 30px;
+        }
+
+        h3 {
+            color: #16a085;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .highlight {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+        }
+
+        figure {
+            margin: 25px auto;
+            text-align: center;
+            border: 1px solid #ddd;
+            padding: 10px;
+            max-width: 90%;
+        }
+
+        figcaption {
+            font-style: italic;
+            margin-top: 8px;
+            color: #7f8c8d;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+        .nav-panel {
+            background-color: #f1f1f1;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+
+            .nav-panel ul {
+                list-style-type: none;
+                padding-left: 0;
+            }
+
+            .nav-panel li {
+                margin-bottom: 8px;
+            }
+
+        blockquote {
+            border-left: 4px solid #bdc3c7;
+            padding-left: 15px;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        aside {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-left: 4px solid #16a085;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="top">Великий текст з різноманітним форматуванням</h1>
+    </header>
+
+    <nav>
+        <div class="nav-panel">
+            <h2>Зміст</h2>
+            <ul>
+                <li><a href="#section1">Розділ 1: Вступ</a></li>
+                <li><a href="#section2">Розділ 2: Основна частина</a></li>
+                <li><a href="#section3">Розділ 3: Додаткові матеріали</a></li>
+                <li><a href="#section4">Розділ 4: Висновки</a></li>
+                <li><a href="MAinPage.html">Посилання на інший документ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <article>
+            <section id="section1">
+                <h2>Розділ 1: Вступ</h2>
+                <p>HTML (HyperText Markup Language) - це мова розмітки для створення веб-сторінок. Вона визначає структуру та зміст веб-сторінки, тоді як CSS (Cascading Style Sheets) використовується для оформлення.</p>
+                <div class="highlight">
+                    <p><strong>Важливо:</strong> HTML документ складається з елементів, які позначаються тегами. Теги оточують зміст і надають йому певне значення.</p>
+                </div>
+                <figure>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="Логотип HTML5" width="200">
+                    <figcaption>Рисунок 1: Логотип HTML5</figcaption>
+                </figure>
+                <h3>Підрозділ 1.1: Історія HTML</h3>
+                <p>HTML був створений Тімом Бернерсом-Лі у 1991 році. Ось основні віхи розвитку:</p>
+                <ul>
+                    <li>HTML 2.0 (1995)</li>
+                    <li>HTML 3.2 (1997)</li>
+                    <li>HTML 4.01 (1999)</li>
+                    <li>XHTML (2000)</li>
+                    <li>HTML5 (2014)</li>
+                </ul>
+            </section>
+
+            <section id="section2">
+                <h2>Розділ 2: Основна частина</h2>
+                <p>Сучасний HTML5 включає багато нових елементів, таких як:</p>
+                <ol>
+                    <li><code><header></code> - верхній колонтитул</li>
+                    <li><code><nav></code> - навігаційні посилання</li>
+                    <li><code><section></code> - розділ документа</li>
+                    <li><code><article></code> - незалежний вміст</li>
+                    <li><code><footer></code> - нижній колонтитул</li>
+                </ol>
+                <p>Приклад коду:</p>
+                <pre><code><!DOCTYPE html>
+<html>
+<head>
+                <title>Приклад сторінки</title>
+</head>
+<body>
+                <h1>Привіт, світе!</h1>
+</body>
+</html></code></pre>
+                <p>Також можна вставляти зображення безпосередньо:</p>
+                <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png" alt="Інший логотип HTML5" width="200" style="float: right; margin-left: 20px;">
+                <p style="clear: both;">Зображення праворуч демонструє альтернативний логотип HTML5. Зверніть увагу, що це зображення вставлено без використання тегу <code><figure></code>, тому не має підпису.</p>
+                <blockquote>
+                    "HTML - це фундамент вебу. Без нього не існувало б веб-сторінок, які ми знаємо сьогодні." - Тім Бернерс-Лі
+                </blockquote>
+            </section>
+
+            <section id="section3">
+                <h2>Розділ 3: Додаткові матеріали</h2>
+                <p>Для подальшого вивчення HTML рекомендуємо такі ресурси:</p>
+                <table border="1" style="width: 100%; border-collapse: collapse;">
+                    <tr>
+                        <th>Ресурс</th>
+                        <th>Опис</th>
+                        <th>Посилання</th>
+                    </tr>
+                    <tr>
+                        <td>MDN Web Docs</td>
+                        <td>Повна документація по HTML</td>
+                        <td><a href="https://developer.mozilla.org/uk/docs/Web/HTML" target="_blank">Перейти</a></td>
+                    </tr>
+                    <tr>
+                        <td>W3Schools</td>
+                        <td>Інтерактивні підручники</td>
+                        <td><a href="https://www.w3schools.com/html/" target="_blank">Перейти</a></td>
+                    </tr>
+                    <tr>
+                        <td>HTML Living Standard</td>
+                        <td>Офіційна специфікація</td>
+                        <td><a href="https://html.spec.whatwg.org/" target="_blank">Перейти</a></td>
+                    </tr>
+                </table>
+                <figure>
+                    <img src="https://www.w3.org/Icons/w3c_main.png" alt="Лого W3C" width="150">
+                    <figcaption>Рисунок 2: Логотип W3C - організації, що розробляє стандарти вебу</figcaption>
+                </figure>
+            </section>
+
+            <section id="section4">
+                <h2>Розділ 4: Висновки</h2>
+                <p>HTML є основною технологією для створення веб-сторінок. Він постійно розвивається, щоб відповідати сучасним вимогам.</p>
+                <p>Основні переваги HTML5:</p>
+                <ul>
+                    <li>Покращена семантика</li>
+                    <li>Підтримка мультимедіа (<code><video></code>, <code><audio></code>)</li>
+                    <li>Графіка та ефекти (<code><canvas></code>, SVG)</li>
+                    <li>API для складних веб-додатків</li>
+                </ul>
+                <p><a href="#top">Повернутися до початку сторінки</a></p>
+                <p><a href="MAinPage.html">Перейти до іншого документу</a> (приклад посилання)</p>
+            </section>
+        </article>
+    </main>
+
+    <aside>
+        <h3>Додаткова інформація</h3>
+        <p>Ось кілька корисних посилань для поглиблення знань про HTML:</p>
+        <ul>
+            <li><a href="https://www.w3.org/TR/html52/" target="_blank">Специфікація HTML5</a></li>
+            <li><a href="https://html.com/" target="_blank">HTML.com</a></li>
+            <li><a href="https://developer.mozilla.org/uk/docs/Learn" target="_blank">MDN: Навчання</a></li>
+        </ul>
+    </aside>
+
+    <footer>
+        <p>© 2025 Практична робота</p>
+    </footer>
+</body>
+</html>
